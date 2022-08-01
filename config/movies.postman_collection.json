@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "44baf5f7-6c02-42c1-be28-a5898197481d",
+		"name": "movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22488005"
+	},
+	"item": [
+		{
+			"name": "create a film",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"titre\": \"Star Wars: The Empire Strikes Back\",\r\n  \"description\": \"Darth Vader is adamant about turning Luke Skywalker to the dark side.2\",\r\n  \"acteurs\": [\r\n    {\r\n      \"nom\": \"Ford\",\r\n      \"prenom\": \"Harrison\"\r\n    },\r\n    {\r\n      \"nom\": \"Hamill\",\r\n      \"prenom\": \"Mark\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/film",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"film"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/film/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"film",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
